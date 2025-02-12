@@ -1,5 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "isolatedDeclarations": false
+  },
   "include": [
     "**/fail.test-d.ts"
   ],
