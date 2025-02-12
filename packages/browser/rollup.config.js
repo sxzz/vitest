@@ -57,7 +57,7 @@ export default () =>
             }
           },
         },
-        isolatedDecl({ extraOutdir: '.node-types' }),
+        isolatedDecl({ transformer: 'oxc', extraOutdir: '.node-types' }),
         ...plugins,
       ],
     },
@@ -75,7 +75,7 @@ export default () =>
       },
       external,
       plugins: [
-        isolatedDecl({ extraOutdir: '.client-types' }),
+        isolatedDecl({ transformer: 'oxc', extraOutdir: '.client-types' }),
         plugins,
       ],
     },
